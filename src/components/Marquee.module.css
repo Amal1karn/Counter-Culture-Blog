@@ -1,0 +1,32 @@
+/* components/Marquee.module.css */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed; /* Fixes it at the bottom */
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Optional: background color */
+  color: rgb(132, 204, 22); /* Text color */
+  height: 50px; /* Adjust height as needed */
+  line-height: 50px; /* Adjust to center text vertically */
+}
+
+.marqueeContent {
+  display: flex; /* Flexbox for horizontal scrolling */
+  width: 200%; /* Ensure it’s wide enough to cover the viewport */
+  animation: marquee 20s linear infinite; /* Adjust duration for smooth scrolling */
+}
+
+.marqueeText {
+  display: inline-block;
+  margin-right: 2rem; /* Space between texts */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
