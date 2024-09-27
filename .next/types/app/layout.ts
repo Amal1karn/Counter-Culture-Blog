@@ -1,4 +1,4 @@
-// File: C:\Users\user\Desktop\CounterCulture\src\app\layout.tsx
+// File: D:\Counter-Culture-Blog\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
